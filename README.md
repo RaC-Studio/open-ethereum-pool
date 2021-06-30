@@ -14,6 +14,7 @@
 * Modern beautiful Ember.js frontend
 * Separate stats for workers: can highlight timed-out workers so miners can perform maintenance of rigs
 * JSON-API for stats
+* PROP MODE Fair and Stable
 
 #### Proxies
 
@@ -37,11 +38,13 @@ First install  [go-ethereum](https://github.com/ethereum/go-ethereum/wiki/Instal
 Clone & compile:
 
     git config --global http.https://gopkg.in.followRedirects true
-    git clone https://github.com/RaC-Studio/open-ethereum-pool
+    git clone https://github.com/RaC-Studio/open-pool
     cd open-ethereum-pool
     make
 
 Install redis-server.
+
+Install nginx
 
 ### Running Pool
 
