@@ -2,7 +2,7 @@
 
 ![Miner's stats page](https://user-images.githubusercontent.com/7374093/31591180-43c72364-b236-11e7-8d47-726cd66b876a.png)
 
-[![Join the chat at https://gitter.im/sammy007/open-ethereum-pool](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sammy007/open-ethereum-pool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/sammy007/open-ethereum-pool.svg?branch=develop)](https://travis-ci.org/sammy007/open-ethereum-pool) [![Go Report Card](https://goreportcard.com/badge/github.com/sammy007/open-ethereum-pool)](https://goreportcard.com/report/github.com/sammy007/open-ethereum-pool)
+Powered by -[Sammy007´s Open-Ethereum-Pool].(https://github.com/sammy007/open-ethereum-pool)
 
 ### Features
 
@@ -23,23 +23,25 @@
 
 ### Building on Linux
 
-Dependencies:
-
-  * go >= 1.9
-  * geth or parity
-  * redis-server >= 2.8.0
-  * nodejs >= 4 LTS
-  * nginx
 
 **I highly recommend to use Ubuntu 16.04 LTS.**
 
-First install  [go-ethereum](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu).
+Install Go-Ethereum:
+
+    sudo add-apt-repository -y ppa:ethereum/ethereum
+    
+    sudo apt-get update
+    
+    sudo apt-get install ethereum
 
 Clone & compile:
 
     git config --global http.https://gopkg.in.followRedirects true
     git clone https://github.com/RaC-Studio/open-pool
     cd open-ethereum-pool
+    
+    ./install.sh
+    
     make
 
 Install redis-server.
