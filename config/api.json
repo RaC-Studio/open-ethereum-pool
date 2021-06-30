@@ -1,7 +1,7 @@
 {
 	"threads": 2,
-	"coin": "eth",
-	"name": "main",
+	"coin": "pool",
+	"name": "api",
 
 	"proxy": {
 		"enabled": false,
